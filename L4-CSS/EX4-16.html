@@ -2,26 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>CSS 색 활용</title>
+        <title>둥근 모서리 테두리</title>
         <style>
-            div {
-                margin-left : 30px;
-                margin-right : 30px;
-                margin-bottom: 10px;
-                color: white;
+            p {
+                background : #90D000;
+                padding : 20px;
+                width : 300px;
             }
+            #round1 { border-radius: 50px; }
+            #round2 { border-radius: 0px 20px 40px 60px; }
+            #round3 { border-radius: 0px 20px 40px; }
+            #round4 { border-radius: 0px 20px; }
+            #round5 { border-radius: 50px; border-style: dotted; }
         </style>
     </head>
     <body>
-        <h3>CSS 색 활용</h3>
-        <hr>
-        <div style="background-color:deepskyblue">
-            deepskyblue(#00BFFF)</div>
-        <div style="background-color:brown">
-            brown(#A52A2A)</div>
-        <div style="background-color:darkorange">
-            darkorange(#FF7C00)</div>
-        <div style="background-color:#008B8B">
-            darkcyan(#008B8B)</div>
+        <h3>둥근 모서리 테두리</h3><hr>
+        <p id="round1">반지름 50픽셀의 둥근 모서리</p>
+        <p id="round2">반지름 0, 20, 40, 60 둥근 모서리</p>
+        <p id="round3">반지름 0, 20, 40, 20 둥근 모서리</p>
+        <p id="round4">반지름 0, 20, 0, 20 둥근 모서리</p>
+        <p id="round5">반지름 50의 둥근 점선 모서리</p>
     </body>
 </html>
