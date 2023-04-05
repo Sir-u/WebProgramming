@@ -2,29 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>display 속성</title>
+        <title>고정 배치</title>
         <style>
-            div {
-                border : 2px solid yellowgreen;
-                color: blue;
-                background : aliceblue;
-            }
-            span {
-                border: 3px dotted red;
-                background: yellow;
+            #fixed {
+                position: fixed;
+                bottom : 10px;
+                right : 10px;
+                width: 100px;
+                padding : 5px;
+                background: red;
+                color: white;
             }
         </style>
     </head>
     <body>
-        <h3>인라인, 인라인 블록, 블록</h3>
-        나는 <div style="display:none">
-            div(none)</div>입니다.<br><br>
-        나는 <div style="display:inline">
-            div(inline)</div>입니다.<br><br>
-        나는 <div style="display:inline-block; height: 50px;">
-            div(inline-block)</div>입니다.<br><br>
-        나는 <div>div<span style="display:block">
-            span(block)</span>입니다.
-        </div>
+        <h3>Merry Christmass!</h3>
+        <hr>
+        <img src="media/christmastree.png" width="300" height="300" alt="크리스마스 트리">
+        <div id="fixed">Happy Christmas!</div>
     </body>
 </html>

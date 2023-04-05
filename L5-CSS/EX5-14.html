@@ -2,29 +2,34 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>display 속성</title>
+        <title>다양한 변환 사례</title>
         <style>
             div {
-                border : 2px solid yellowgreen;
-                color: blue;
-                background : aliceblue;
+                display : inline-block;
+                padding : 5px;
+                color : white;
+                background : olivedrab;
             }
-            span {
-                border: 3px dotted red;
-                background: yellow;
-            }
+            div#rotate { transform: rotate(20deg); }
+            div#skew { transform: skew(0deg,-20deg); }
+            div#translate { transform: translateY(100px); }
+            div#scale { transform: scale(3,1); }
+
+            div#rotate:hover { transform: rotate(80deg); }
+            div#skew:hover { transform: skew(0deg,-60deg); }
+            div#translate:hover { transform: translate(50px, 100px); }
+            div#scale:hover { transform: scale(4,2); }
+
+            div#scale:active { transform: scale(1,5); }
         </style>
     </head>
     <body>
-        <h3>인라인, 인라인 블록, 블록</h3>
-        나는 <div style="display:none">
-            div(none)</div>입니다.<br><br>
-        나는 <div style="display:inline">
-            div(inline)</div>입니다.<br><br>
-        나는 <div style="display:inline-block; height: 50px;">
-            div(inline-block)</div>입니다.<br><br>
-        나는 <div>div<span style="display:block">
-            span(block)</span>입니다.
-        </div>
+        <h3>다양한 Transform</h3>
+        아래는 회전(rotate), 기울림(skew), 이동(translate), 확대/축소(scale)가 적용된 사례이다. 또한 마우스를 올리면 추가적 변환이 일어난다.
+        <hr>
+        <div id="rotate">rotate(20deg)</div>
+        <div id="skew">skew(0,-20deg)</div>
+        <div id="translate">translateY(100px)</div>
+        <div id="scale">scale(3,1)</div>
     </body>
 </html>

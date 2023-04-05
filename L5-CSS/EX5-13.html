@@ -2,29 +2,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>display 속성</title>
+        <title>전환</title>
         <style>
-            div {
-                border : 2px solid yellowgreen;
-                color: blue;
-                background : aliceblue;
-            }
             span {
-                border: 3px dotted red;
-                background: yellow;
+                transition: font-size 5s;
+            }
+            span:hover {
+                font-size: 500%;
             }
         </style>
     </head>
     <body>
-        <h3>인라인, 인라인 블록, 블록</h3>
-        나는 <div style="display:none">
-            div(none)</div>입니다.<br><br>
-        나는 <div style="display:inline">
-            div(inline)</div>입니다.<br><br>
-        나는 <div style="display:inline-block; height: 50px;">
-            div(inline-block)</div>입니다.<br><br>
-        나는 <div>div<span style="display:block">
-            span(block)</span>입니다.
-        </div>
+        <h3>font-size에 대한 전환</h3>
+        <hr>
+        <p><span>꽝!</span> 글자에 마우스를 올려보세요.</p>
     </body>
 </html>

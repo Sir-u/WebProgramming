@@ -2,29 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>display 속성</title>
+        <title>overflow 프로퍼티</title>
         <style>
-            div {
-                border : 2px solid yellowgreen;
-                color: blue;
-                background : aliceblue;
+            p {
+                width: 15em;
+                height: 3em;
+                border : 1px solid lightgray;
             }
-            span {
-                border: 3px dotted red;
-                background: yellow;
-            }
+            .hidden { overflow: hidden; }
+            .visible { overflow: visible; }
+            .scroll { overflow: scroll; }
         </style>
     </head>
     <body>
-        <h3>인라인, 인라인 블록, 블록</h3>
-        나는 <div style="display:none">
-            div(none)</div>입니다.<br><br>
-        나는 <div style="display:inline">
-            div(inline)</div>입니다.<br><br>
-        나는 <div style="display:inline-block; height: 50px;">
-            div(inline-block)</div>입니다.<br><br>
-        나는 <div>div<span style="display:block">
-            span(block)</span>입니다.
-        </div>
+        <h3>overflow 프로퍼티</h3>
+        <hr>
+        <p class="hidden">overflow에 hidden 값을 적용하면 박스를 넘어가는 내용이 잘려 보이지 않습니다.</p><br>
+        <p class="visible">overflow에 visible 값을 적용하면 콘텐트가 박스를 넘어가서도 출력됩니다 </p><br>
+        <p class="scroll">overflow에 scroll 값을 적용하면 박스에 스크롤바를 붙여 출력합니다. (길이 연장)</p><br>
     </body>
 </html>

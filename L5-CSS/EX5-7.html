@@ -2,29 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>display 속성</title>
+        <title>visibility 프로퍼티</title>
         <style>
-            div {
-                border : 2px solid yellowgreen;
-                color: blue;
-                background : aliceblue;
-            }
             span {
-                border: 3px dotted red;
-                background: yellow;
+                visibility: hidden;
+                /* visibility: visible; */
             }
         </style>
     </head>
     <body>
-        <h3>인라인, 인라인 블록, 블록</h3>
-        나는 <div style="display:none">
-            div(none)</div>입니다.<br><br>
-        나는 <div style="display:inline">
-            div(inline)</div>입니다.<br><br>
-        나는 <div style="display:inline-block; height: 50px;">
-            div(inline-block)</div>입니다.<br><br>
-        나는 <div>div<span style="display:block">
-            span(block)</span>입니다.
-        </div>
+        <h3>다음 빈 곳에 숨은 단어는?</h3>
+        <hr>
+        <ul>
+            <li> I (<span>love</span>) you.
+            <li> CSS is Cascading (<span>Sytle</span>) Sheet.
+            <li> 응답하라 (<span>1988</span>).
+
+        </ul>
     </body>
 </html>
