@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>함수</title>
+        <script>
+            function evalParseIntIsNaN() {
+                var res = eval('2*3+4*6');
+                document.write('eval("2*3+4*6")는 ' + res + '<br>');
+                var m = eval('32');
+                document.write('parseInt("32")는 ' + m + '<br>');
+                var m = eval('32', 16);
+                document.write('parseInt("32", 16)는 ' + m + '<br>');
+                var n = eval('0x32');
+                document.write('parseInt("0x32")는 ' + n + '<br>');
+
+                n = parseInt('hello');
+                if (isNan(n))
+                    document.write('hello는 숫자가 아닙니다.');
+            }
+        </script>
+    </head>
+    <body>
+        <h3>eval(), parseInt(), isNaN()</h3>
+        <hr>
+        <script>
+            evalParseIntIsNaN();
+        </script>
+    </body>
+</html>
