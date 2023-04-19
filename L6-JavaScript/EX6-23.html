@@ -12,10 +12,10 @@
                 var m = eval('32', 16);
                 document.write('parseInt("32", 16)는 ' + m + '<br>');
                 var n = eval('0x32');
-                document.write('parseInt("0x32")는 ' + n + '<br>');
+                document.write('parseInt("0x32")는 ' + n + '<br><br>');
 
                 n = parseInt('hello');
-                if (isNan(n))
+                if (isNaN(n))
                     document.write('hello는 숫자가 아닙니다.');
             }
         </script>
